@@ -86,8 +86,19 @@
       }
     }
 
+    @keyframes rainbowShift {
+      0% {
+        background-position: 0% 50%;
+      }
+      100% {
+        background-position: 100% 50%;
+      }
+    }
+
     .rainbow-text {
-      background: linear-gradient(to right, #e70000, #ff8c00, #ffef00, #00811f, #0044ff, #760089, #ffffff, #55cdfc, #f7a8b8, #613915);
+      background: linear-gradient(90deg, #e70000, #ff8c00, #ffef00, #00811f, #0044ff, #760089, #ffffff, #55cdfc, #f7a8b8, #613915);
+      background-size: 400% 100%;
+      animation: rainbowShift 8s linear infinite;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
