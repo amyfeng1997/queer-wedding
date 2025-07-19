@@ -2,78 +2,75 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rej & Jaime's Wedding</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Helvetica', sans-serif;
-      background: repeating-linear-gradient(
-        to bottom,
-        pink,
-        pink 100px,
-        lightblue 100px,
-        lightblue 200px,
-        white 200px,
-        white 300px
-      );
-      color: #333;
+      font-family: "Georgia", serif;
+      font-style: italic;
+      background-color: #fff9f9;
+      color: #5c4b51;
+      display: flex;
+      height: 100vh;
+    }
+
+    .left {
+      flex: 1;
+      background-image: url('/mnt/data/IMG_3297.jpg');
+      background-size: cover;
+      background-position: center;
+    }
+
+    .right {
+      flex: 1;
+      background-color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.05);
+    }
+
+    h1, p {
+      margin: 0 0 1rem 0;
       text-align: center;
-      padding: 30px;
     }
 
-    header {
-      font-size: 2.5em;
-      font-weight: bold;
-      margin-bottom: 30px;
+    h1 {
+      font-size: 2.5rem;
+      color: #a0522d;
     }
 
-    .save-the-date {
-      background-color: rgba(255, 255, 255, 0.8);
-      padding: 20px;
-      border-radius: 10px;
-      width: 80%;
-      max-width: 600px;
-      margin: 0 auto 30px auto;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    p {
+      font-size: 1.2rem;
     }
 
-    .save-the-date h2 {
-      margin: 0;
-      font-size: 1.8em;
+    a {
+      display: inline-block;
+      margin-top: 1.5rem;
+      padding: 0.7rem 1.5rem;
+      background-color: #a0522d;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-style: italic;
     }
 
-    .note {
-      font-family: 'Courier New', monospace;
-      font-size: 0.95em;
-      margin-top: 10px;
-      color: #555;
-    }
-
-    iframe {
-      border: none;
-      width: 100%;
-      height: 600px;
-      max-width: 640px;
-      margin: 0 auto;
-      display: block;
+    a:hover {
+      background-color: #8b4513;
     }
   </style>
 </head>
 <body>
-  <header>
-    Hello Friends! Come Celebrate Rej and Jaime's Wedding
-  </header>
-
-  <div class="save-the-date">
-    <h2>Save the date: September 2026</h2>
-    <div class="note">A final date will be posted in 2-3 months</div>
+  <div class="left"></div>
+  <div class="right">
+    <h1>Hello Friends!</h1>
+    <p>Come Celebrate Rej and Jaime's Wedding</p>
+    <p>Save the date: September 2026</p>
+    <p><em>A final date will be posted in 2-3 months</em></p>
+    <a href="https://forms.gle/dVgg4npDUKmYV1ei7" target="_blank">RSVP</a>
   </div>
-
-  <iframe 
-    src="https://docs.google.com/forms/d/e/1FAIpQLScRpTSHjvLPBKe-7FUGTDzPh2vgoPb-eZX34cBe0Qu5UScGfw/viewform?embedded=true" 
-    allowfullscreen>
-    Loading…
-  </iframe>
 </body>
 </html>
