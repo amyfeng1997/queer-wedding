@@ -28,13 +28,30 @@
       width: 40%;
       background-image: url('abstract-watercolor-autumn-leaves-background-260nw-2470332559.webp');
       background-size: cover;
-      background-position: center;
+      background-position: top center;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       padding: 2rem;
       box-shadow: -5px 0 15px rgba(0, 0, 0, 0.05);
+      position: relative;
+    }
+
+    .right::before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      right: 0;
+      top: 0;
+      background-color: rgba(255, 255, 255, 0.5);
+      z-index: 0;
+    }
+
+    .right > * {
+      position: relative;
+      z-index: 1;
     }
 
     h1, p {
@@ -114,15 +131,14 @@
     <p style="background-color: #a0522d; color: #fff; padding: 0.3rem 0.6rem; border-radius: 5px;">Save the date: September 2026</p>
     <p class="small" style="margin-bottom: 0;"><em>**A final date will be posted in 2-3 months**</em></p>
     <a href="https://forms.gle/dVgg4npDUKmYV1ei7" target="_blank" style="display: flex; align-items: center; gap: 5px; margin-top: 0; background: none; padding: 0;">
-  <span style="font-size: 16px; color: #5c4b51; font-weight: bold; font-family: 'Lovely Coffee', cursive;">RSVP</span>
-  <span style="font-size: 2rem; font-style: normal;">💌</span>
-</a>
-    </div>
-    <video width="100%" autoplay muted loop playsinline>
-      <source src="https://drive.google.com/uc?export=download&id=1J3Cia_E6QvMGPZlOfY2Z5ugMwjcH284v" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  
+      <span style="font-size: 20px; color: #5c4b51; font-weight: bold; font-family: 'Lovely Coffee', cursive;">RSVP</span>
+      <span style="font-size: 2rem; font-style: normal;">💌</span>
+    </a>
+  </div>
+  <video width="100%" autoplay muted loop playsinline>
+    <source src="https://drive.google.com/uc?export=download&id=1J3Cia_E6QvMGPZlOfY2Z5ugMwjcH284v" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
   </div>
   <script>
     function rainCats() {
@@ -140,9 +156,9 @@
   <div style="position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); width: 350px; height: 250px; max-width: 100%;">
     <iframe width="100%" height="250" src="https://www.youtube.com/embed/1So1_0m6srM?autoplay=1&mute=1&loop=1&playlist=1So1_0m6srM" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
   </div>
-<audio autoplay loop>
-  <source src="Hustle performance.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+  <audio autoplay loop>
+    <source src="Hustle performance.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
 </body>
 </html>
